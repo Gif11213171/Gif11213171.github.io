@@ -1,0 +1,240 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500vh; /* 模擬長頁面 */
+    margin: 0;
+    background-color: #333333;
+    color: #ffffff; /* 白色文字與深灰背景搭配 */
+}
+.content {
+    text-align: center; /* 讓內部文字置中 */
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.Gillian{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 40px;
+    height: 70px; 
+}
+#particles{
+    top: 0; /* 從頁面頂部開始 */
+    left: 0; /* 從頁面左側開始 */
+    width: 100%; /* 覆蓋全寬 */
+    height: 100%; /* 覆蓋全高 */
+    z-index: -1; /* 放置在其他內容之後 */
+    background-color: #9b9b9b; /* 設置背景色，與頁面主題一致 */
+}
+#particles-js {
+    position: static ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 0%;
+    z-index: -1;
+    background-color: #100909;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+}
+.photo{
+    text-align: center;
+    margin-top: 40px; /* 照片與上方的距離 */
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.4);
+    }
+}
+.myphoto{
+    width: 150px;
+    height: 150px; /* 設置高度 */
+    border-radius: 9999px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
+    animation: glow 2s infinite; /* 呼吸光暈效果 */
+}
+.info{
+    text-align: center; /* 水平置中文字 */
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 0.5;
+}
+.marry{
+    text-align: center; /* 水平置中文字 */
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 40px; /* 減少與按鈕區的距離 */
+    height: 20px; 
+}
+.we{
+    text-align: center; /* 水平置中文字 */
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 20px; /* 減少與按鈕區的距離 */
+}
+.hahah{
+    text-align: center; /* 水平置中文字 */
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px; /* 減少與按鈕區的距離 */
+}
+.hehehehehe{
+    text-align: center; /* 水平置中文字 */
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px; /* 減少與按鈕區的距離 */
+}
+.photo img {
+    max-width: 100%; /* 確保圖片不超過容器寬度 */
+    height: auto; /* 保持圖片比例 */
+    border-radius: 50px; /* 圖片加點圓角效果 */
+    margin-bottom: 0.5px; /* 與文字保持間距 */
+}
+.button {
+    display: flex;               /* 彈性佈局，可以更好地控制內部內容 */
+    justify-content: center;     /* 水平置中內容 */
+    align-items: center;         /* 垂直置中內容 */
+    border: 3px solid #ffffff;   /* 白色邊框 */
+    padding: 20px 200px;               /* 增加內部間距 */
+    margin: 20px 0;              /* 上下外邊距 */
+    margin-top: 30px; /* 減少與上方的距離 */
+    font-family: sans-serif;     /* 字體樣式 */
+    font-weight: bold;           /* 粗體字 */
+    color: #e8d8c9;              /* 字體顏色 */
+    text-decoration: none;       /* 去掉下劃線 */
+    text-align: center;
+    font-size: 18px;             /* 字體大小 */
+    letter-spacing: 4px;         /* 增加字母間距 */
+    border-radius: 25px;         /* 圓角邊框，值越大邊框越圓 */
+    background-color: hwb(19 21% 3%);   /* 背景顏色，可自行調整 */
+    transition: all 0.3s ease;   /* 增加過渡效果 */
+    width: 200px;                /* 設置按鈕固定寬度 */
+}
+.button:hover {
+    background-color: #4b607f;  /* 懸停時的背景顏色 */
+    color: #fff;               /* 字體顏色 */
+    transform: scale(1.1);     /* 稍微放大按鈕 */
+    border-color: #fff;        /* 邊框顏色變化 */
+}
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* 統一按鈕間距 */
+}
+.unique-box {
+    width: 380px; /* 獨立設置寬度 */
+    height: 60px; /* 設置高度 */
+    background-color: #444444; /* 背景顏色 */
+    color: #ffffff; /* 字體顏色 */
+    border-radius: 60px; /* 圓角邊框 */
+    text-align: center; /* 文字水平居中 */
+    line-height: 60px; /* 行高設置為高度，讓文字垂直居中 */
+    font-family: Arial, sans-serif; /* 字體樣式 */
+    font-size: 14px; /* 字體大小 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 添加陰影效果 */
+    margin: 0 auto; /* 讓元素居中 */
+    margin-bottom: 20px; /* 調整框與框之間的距離 */
+    transition: all 0.3s ease; /* 過渡效果 */
+    align-items: center;         /* 垂直置中內容 */
+    justify-content: center;
+}
+.unique-box:hover {
+    background-color: #555555; /* 改變背景顏色 */
+    transform: scale(1.1); /* 放大框 */
+    border-color: #ffcc00; /* 改變邊框顏色 */
+}
+.unique {
+    width: 380px; /* 獨立設置寬度 */
+    height: 60px; /* 設置高度 */
+    background-color: #444444; /* 背景顏色 */
+    color: #ffffff; /* 字體顏色 */
+    border-radius: 60px; /* 圓角邊框 */
+    text-align: center; /* 文字水平居中 */
+    line-height: 60px; /* 行高設置為高度，讓文字垂直居中 */
+    font-family: Arial, sans-serif; /* 字體樣式 */
+    font-size: 14px; /* 字體大小 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 添加陰影效果 */
+    margin: 0 auto; /* 讓元素居中 */
+    margin-bottom: 20px; /* 調整框與框之間的距離 */
+    transition: all 0.3s ease; /* 過渡效果 */
+    align-items: center;         /* 垂直置中內容 */
+    justify-content: center;
+}
+.unique:hover {
+    background-color: #555555; /* 改變背景顏色 */
+    transform: scale(1.1); /* 放大框 */
+    border-color: #ffcc00; /* 改變邊框顏色 */
+}
+.works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* 照片间距 */
+    max-width: 1200px; /* 设置最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+}
+.work-item {
+    overflow: hidden; /* 防止图片溢出容器 */
+    border-radius: 10px; /* 圆角 */
+    position: relative; /* 保证子元素定位正确 */
+}
+.work-item img {
+    width: 100%; /* 宽度占满容器 */
+    height: 100%; /* 高度占满容器 */
+    object-fit: cover; /* 填满且保持比例 */
+    aspect-ratio: 1; /* 强制正方形比例 */
+    filter: blur(20px) brightness(0.8); /* 初始模糊和降低亮度 */
+    transition: transform 0.5s ease, filter 0.5s ease; /* 添加动画效果 */
+}
+.work-item img:hover {
+    transform: scale(1.1); /* 悬停时放大 */
+    filter: blur(0) brightness(1); /* 悬停时清晰并恢复亮度 */
+}
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.top:hover {
+    background-color: #4b607f;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+    
+
